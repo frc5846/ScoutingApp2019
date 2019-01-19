@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Scouting App 2019</string>
+    <string name="app_name">Scouting App 2018</string>
     <string name="edit_message">Enter a message</string>
     <string name="button_send">Send</string>
     <string name="increase_value">+</string>
@@ -11,7 +11,7 @@
     <string name="alliance_color">Alliance Color</string>
     <string name="red">Red</string>
     <string name="blue">Blue</string>
-    <string name="Sandstorm">SAND</string>
+    <string name="Sandstorm">Sandstorm</string>
     <string name="tele_op">TELE-OP</string>
     <string name="notes">NOTES</string>
     <string name="scale_cubes">Power Cubes to Scale</string>
