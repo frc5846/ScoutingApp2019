@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guestaccount.scoutingapp2018.Tele">
+
+    <Button
+        android:id="@+id/auto_tele"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:onClick="Autonomous"
+        android:text="@string/auto"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tele_tele"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/notes_tele"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:onClick="Notes"
+        android:text="@string/notes"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tele_tele"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tele_tele"
+        android:layout_width="145dp"
+        android:layout_height="46dp"
+        android:text="@string/tele_op"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/notes_tele"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/auto_tele"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/scale_tele_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/scale_tele_entry"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/scale_tele_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="@string/increase_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/scale_tele_entry"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/switch_tele_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/switch_opp_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_opp_entry"
+        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="24dp"/>
+
+    <Button
+        android:id="@+id/deliver_tele_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_tele_entry"
+        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp"/>
+
+    <Button
+        android:id="@+id/switch_tele_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="@string/increase_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/switch_opp_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:text="@string/increase_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_opp_entry"
+        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp"/>
+
+    <Button
+        android:id="@+id/can_not_climb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/can_not_climb"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/climbing" />
+
+    <Button
+        android:id="@+id/team_climb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/team_climb"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/can_not_climb"
+        app:layout_constraintStart_toEndOf="@+id/can_not_climb" />
+
+    <Button
+        android:id="@+id/can_climb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/can_climb"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/can_not_climb"
+        app:layout_constraintEnd_toStartOf="@+id/can_not_climb" />
+
+    <TextView
+        android:id="@+id/scale_tele_entry"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/scale_tele"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scale_tele" />
+
+    <TextView
+        android:id="@+id/switch_auto"
+        android:layout_width="275dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/switch_cubes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scale_tele_entry" />
+
+    <TextView
+        android:id="@+id/switch_opp"
+        android:layout_width="350dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/opp_switch_cubes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_tele_entry" />
+
+    <TextView
+        android:id="@+id/deliver_tele"
+        android:layout_width="300dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/deliver_cubes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_opp_entry" />
+
+    <TextView
+        android:id="@+id/climbing"
+        android:layout_width="275dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/climb"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliver_tele_entry" />
+
+    <TextView
+        android:id="@+id/scale_tele"
+        android:layout_width="275dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/scale_cubes"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes_tele" />
+
+    <TextView
+        android:id="@+id/deliver_tele_entry"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/delivered_tele"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliver_tele" />
+
+    <TextView
+        android:id="@+id/switch_tele_entry"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/switch_tele"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_auto" />
+
+    <TextView
+        android:id="@+id/switch_opp_entry"
+        android:layout_width="175dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/opp_switch"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_opp" />
+
+    <Button
+        android:id="@+id/deliver_tele_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="@string/increase_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_tele_entry"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

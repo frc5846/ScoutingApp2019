@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.guestaccount.scoutingapp2018.Notes">
+
+    <Button
+        android:id="@+id/tele_notes"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:onClick="Teleop"
+        android:text="@string/tele_op"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/notes_notes"
+        app:layout_constraintStart_toEndOf="@+id/auto_notes" />
+
+    <Button
+        android:id="@+id/auto_notes"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:onClick="Autonomous"
+        android:text="@string/auto"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tele_notes"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/notes_notes"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:text="@string/notes"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <EditText
+        android:id="@+id/notes_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notes" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/note_input"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tele_notes" />
+
+    <TextView
+        android:id="@+id/team_display"
+        android:layout_width="103dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/match_display"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="@string/team_number" />
+
+    <TextView
+        android:id="@+id/match_display"
+        android:layout_width="97dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="@string/match_number" />
+
+</android.support.constraint.ConstraintLayout>
