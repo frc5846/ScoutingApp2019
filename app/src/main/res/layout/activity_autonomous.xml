@@ -7,6 +7,144 @@
     tools:context="com.example.guestaccount.scoutingapp2018.Autonomous">
 
     <Button
+        android:id="@+id/deliver_auto_up3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/increase_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/deliver_auto_down3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/deliver_auto_entry3"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/level_3_hatch_auto"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliver_auto3" />
+
+    <TextView
+        android:id="@+id/deliver_auto3"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="@string/hatch_3"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_tele_entry3" />
+
+    <Button
+        android:id="@+id/switch_auto_down3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/switch_tele_entry3"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/level_3_fuel_auto"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_auto3" />
+
+    <Button
+        android:id="@+id/switch_auto_up3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:text="@string/increase_value"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/switch_auto3"
+        android:layout_width="275dp"
+        android:layout_height="30dp"
+        android:text="@string/fuel_3"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/scale_auto_entry"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/scale_auto_entry"
+        app:layout_constraintTop_toBottomOf="@+id/scale_auto_entry3" />
+
+    <Button
+        android:id="@+id/scale_auto_down3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/decrease_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/scale_auto_entry3"
+        android:layout_width="175dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/level_2_hatch_auto"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_1_sand3" />
+
+    <Button
+        android:id="@+id/scale_auto_up3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:text="@string/increase_value"
+        android:textSize="30sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/fuel_1_sand3"
+        android:layout_width="275dp"
+        android:layout_height="26dp"
+        android:text="@string/hatch_2"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deliver_auto_entry" />
+
+    <Button
         android:id="@+id/baseline_yes2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -43,19 +181,18 @@
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
-        android:text="@string/scale_auto"
+        android:text="@string/level_1_fuel_auto"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scale_auto" />
+        app:layout_constraintTop_toBottomOf="@+id/fuel_1_sand" />
 
     <TextView
-        android:id="@+id/scale_auto"
+        android:id="@+id/fuel_1_sand"
         android:layout_width="275dp"
         android:layout_height="26dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/scale_cubes"
+        android:text="@string/fuel_1"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -100,12 +237,13 @@
         android:id="@+id/switch_auto_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:text="@string/increase_value"
         android:textAlignment="center"
         android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
-        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry3"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
         android:id="@+id/deliver_auto_down"
@@ -121,18 +259,17 @@
         android:id="@+id/deliver_auto_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="28dp"
         android:text="@string/increase_value"
         android:textSize="30sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry"
-        app:layout_constraintRight_toRightOf="parent" android:layout_marginEnd="16dp" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
         android:id="@+id/switch_auto"
         android:layout_width="275dp"
         android:layout_height="30dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/switch_cubes"
+        android:text="@string/hatch_1"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/scale_auto_entry"
@@ -146,7 +283,7 @@
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
-        android:text="@string/switch_auto"
+        android:text="@string/level_1_hatch_auto"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -157,8 +294,7 @@
         android:id="@+id/deliver_auto"
         android:layout_width="300dp"
         android:layout_height="30dp"
-        android:layout_marginTop="36dp"
-        android:text="@string/deliver_cubes"
+        android:text="@string/fuel_2"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -170,7 +306,7 @@
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginTop="16dp"
-        android:text="@string/delivered_auto"
+        android:text="@string/level_2_fuel_auto"
         android:textAlignment="center"
         android:textSize="30sp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -200,13 +336,12 @@
         android:id="@+id/Habitat"
         android:layout_width="275dp"
         android:layout_height="30dp"
-        android:layout_marginTop="8dp"
         android:text="@string/habitat"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deliver_auto_entry" />
+        app:layout_constraintTop_toBottomOf="@+id/deliver_auto_entry3" />
 
     <TextView
         android:id="@+id/Sandstorm"
