@@ -45,9 +45,18 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
         hatch_one_sand_down = findViewById(R.id.hatch_one_sand_down);
         fuel_two_sand_up = findViewById(R.id.fuel_two_sand_up);
         fuel_two_sand_down = findViewById(R.id.fuel_two_sand_down);
+        hatch_two_sand_up = findViewById(R.id.hatch_two_sand_up);
+        hatch_two_sand_down = findViewById(R.id.hatch_two_sand_down);
+        fuel_three_sand_up = findViewById(R.id.fuel_three_sand_up);
+        fuel_three_sand_down = findViewById(R.id.fuel_three_sand_down);
+        hatch_three_sand_up = findViewById(R.id.hatch_three_sand_up);
+        hatch_three_sand_down = findViewById(R.id.hatch_three_sand_down);
         fuel_one_sand_entry = findViewById(R.id.fuel_one_sand_entry);
         hatch_one_sand_entry = findViewById(R.id.hatch_one_sand_entry);
         fuel_two_sand_entry = findViewById(R.id.fuel_two_sand_entry);
+        hatch_two_sand_entry = findViewById(R.id.hatch_two_sand_entry);
+        fuel_three_sand_entry = findViewById(R.id.fuel_three_sand_entry);
+        hatch_three_sand_entry = findViewById(R.id.hatch_three_sand_entry);
 
         fuel_one_sand_up.setOnClickListener(this);
         fuel_one_sand_down.setOnClickListener(this);
