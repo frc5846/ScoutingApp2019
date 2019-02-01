@@ -28,9 +28,12 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
     TextView hatch_two_sand_entry;
     TextView fuel_three_sand_entry;
     TextView hatch_three_sand_entry;
-    public static int scale_auto=0;
-    public static int switch_auto=0;
-    public static int deliver_auto=0;
+    public static int fuel_one_sand=0;
+    public static int hatch_one_sand=0;
+    public static int fuel_two_sand=0;
+    public static int hatch_two_sand=0;
+    public static int fuel_three_sand=0;
+    public static int hatch_three_sand=0;
 
 
 
@@ -64,9 +67,19 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
         hatch_one_sand_down.setOnClickListener(this);
         fuel_two_sand_up.setOnClickListener(this);
         fuel_two_sand_down.setOnClickListener(this);
-        fuel_one_sand_entry.setText(String.valueOf(scale_auto));
-        hatch_one_sand_entry.setText(String.valueOf(switch_auto));
-        fuel_two_sand_entry.setText(String.valueOf(deliver_auto));
+        hatch_two_sand_up.setOnClickListener(this);
+        hatch_two_sand_down.setOnClickListener(this);
+        fuel_three_sand_up.setOnClickListener(this);
+        fuel_three_sand_down.setOnClickListener(this);
+        hatch_three_sand_up.setOnClickListener(this);
+        hatch_three_sand_down.setOnClickListener(this);
+        fuel_one_sand_entry.setText(String.valueOf(fuel_one_sand));
+        hatch_one_sand_entry.setText(String.valueOf(hatch_one_sand));
+        fuel_two_sand_entry.setText(String.valueOf(fuel_two_sand));
+        hatch_one_sand_entry.setText(String.valueOf(hatch_two_sand));
+        fuel_two_sand_entry.setText(String.valueOf(fuel_three_sand));
+        hatch_one_sand_entry.setText(String.valueOf(hatch_three_sand));
+
 /*
         Button hatch_one_sand_up = (Button) findViewById(R.id.hatch_one_sand_up);
         final TextView fuel_one_sand_entry = (TextView) findViewById(R.id.fuel_one_sand_entry);
@@ -86,8 +99,8 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
 
         );
 
-        Button scale_auto_down = (Button) findViewById(R.id.scale_auto_down);
-        scale_auto_down.setOnClickListener(new Button.OnClickListener(){
+        Button fuel_one_sand_down = (Button) findViewById(R.id.fuel_one_sand_down);
+        fuel_one_sand_down.setOnClickListener(new Button.OnClickListener(){
             int i = 0;
             public void onClick(View v){
                 i--;
@@ -99,9 +112,9 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
 
         );
 
-        Button switch_auto_up = (Button) findViewById(R.id.switch_auto_up);
+        Button hatch_one_sand_up = (Button) findViewById(R.id.hatch_one_sand_up);
         final TextView hatch_one_sand_entry = (TextView) findViewById(R.id.hatch_one_sand_entry);
-        switch_auto_up.setOnClickListener(new Button.OnClickListener(){
+        hatch_one_sand_up.setOnClickListener(new Button.OnClickListener(){
             int i = 0;
             public void onClick(View v){
             i++;
@@ -151,10 +164,10 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
 
         ); */
 }
- /*public void scale_auto(View v) {
+ /*public void fuel_one_sand(View v) {
         if(v==hatch_one_sand_up){
             i++;
-        }  else if(v==scale_auto_down){
+        }  else if(v==fuel_one_sand_down){
             i--;
             if (i<0){
                 i=0;
@@ -175,34 +188,64 @@ public class Sandstorm extends AppCompatActivity implements OnClickListener {
     @Override
     public void onClick(View v) {
         if(v==fuel_one_sand_up){
-            scale_auto++;
+            fuel_one_sand++;
         }
         else if(v==fuel_one_sand_down){
-            scale_auto--;
-            if (scale_auto<0){
-                scale_auto=0;
+            fuel_one_sand--;
+            if (fuel_one_sand<0){
+                fuel_one_sand=0;
             }
         }
         else if(v==hatch_one_sand_up) {
-            switch_auto++;
+            hatch_one_sand++;
         }
         else if(v==hatch_one_sand_down){
-            switch_auto--;
-            if(switch_auto<0){
-                switch_auto=0;
+            hatch_one_sand--;
+            if(hatch_one_sand<0){
+                hatch_one_sand=0;
             }
         }
         else if(v==fuel_two_sand_up){
-            deliver_auto++;
+            fuel_two_sand++;
         }
         else if(v==fuel_two_sand_down){
-            deliver_auto--;
-            if(deliver_auto<0){
-                deliver_auto=0;
+            fuel_two_sand--;
+            if(fuel_two_sand<0){
+                fuel_two_sand=0;
             }
         }
-        fuel_one_sand_entry.setText(String.valueOf(scale_auto));
-        hatch_one_sand_entry.setText(String.valueOf(switch_auto));
-        fuel_two_sand_entry.setText(String.valueOf(deliver_auto));
+        else if(v==hatch_two_sand_up) {
+            hatch_two_sand++;
+        }
+        else if(v==hatch_two_sand_down){
+            hatch_two_sand--;
+            if(hatch_two_sand<0){
+                hatch_two_sand=0;
+            }
+        }
+        else if(v==fuel_three_sand_up) {
+            fuel_three_sand++;
+        }
+        else if(v==fuel_three_sand_down){
+            fuel_three_sand--;
+            if(fuel_three_sand<0){
+                fuel_three_sand=0;
+            }
+        }
+        else if(v==hatch_three_sand_up) {
+            hatch_three_sand++;
+        }
+        else if(v==hatch_three_sand_down){
+            hatch_three_sand--;
+            if(hatch_three_sand<0){
+                hatch_three_sand=0;
+            }
+        }
+        fuel_one_sand_entry.setText(String.valueOf(fuel_one_sand));
+        hatch_one_sand_entry.setText(String.valueOf(hatch_one_sand));
+        fuel_two_sand_entry.setText(String.valueOf(fuel_two_sand));
+        hatch_two_sand_entry.setText(String.valueOf(hatch_two_sand));
+        fuel_three_sand_entry.setText(String.valueOf(fuel_three_sand));
+        hatch_three_sand_entry.setText(String.valueOf(hatch_three_sand));
     }
 }
