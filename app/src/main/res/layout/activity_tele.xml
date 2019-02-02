@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/fuel_three_tele"
-        android:layout_width="350dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/fuel_3"
         android:textAlignment="center"
@@ -24,18 +24,18 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/fuel_two_tele_entry"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="16dp" />
 
     <TextView
         android:id="@+id/fuel_three_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_3_fuel_tele"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fuel_three_tele" />
@@ -47,14 +47,14 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/hatch_three_tele_entry"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/hatch_three_tele"
-        android:layout_width="300dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/hatch_3"
         android:textAlignment="center"
@@ -70,17 +70,17 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/fuel_three_tele_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/hatch_three_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_3_hatch_tele"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hatch_three_tele" />
@@ -92,7 +92,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/hatch_two_tele_entry"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -140,7 +140,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/fuel_one_tele_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -150,7 +150,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/fuel_one_tele_entry"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="16dp" />
@@ -162,7 +162,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/hatch_one_tele_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -173,7 +173,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/hatch_three_tele_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -183,7 +183,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/hatch_two_tele_entry"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginStart="16dp" />
@@ -194,7 +194,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/hatch_one_tele_entry"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="16dp" />
@@ -205,7 +205,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/fuel_two_tele_entry"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginEnd="16dp" />
@@ -214,13 +214,10 @@
         android:id="@+id/can_not_climb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
         android:text="@string/can_not_climb"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/climb_two"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/climbing"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -228,12 +225,10 @@
         android:id="@+id/climb_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginRight="40dp"
         android:text="@string/can_climb_three"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/can_not_climb"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/climb_two"
+        app:layout_constraintTop_toTopOf="@+id/climb_two" />
 
     <Button
         android:id="@+id/climb_two"
@@ -241,24 +236,25 @@
         android:layout_height="wrap_content"
         android:text="@string/can_climb_two"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/can_not_climb"
-        app:layout_constraintEnd_toStartOf="@+id/climb_three" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/climbing" />
 
     <TextView
         android:id="@+id/fuel_one_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_1_fuel_tele"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/feul_one_tele" />
 
     <TextView
         android:id="@+id/hatch_one_tele"
-        android:layout_width="275dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/hatch_1"
         android:textAlignment="center"
@@ -269,8 +265,8 @@
 
     <TextView
         android:id="@+id/fuel_two_tele"
-        android:layout_width="350dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/fuel_2"
         android:textAlignment="center"
@@ -281,8 +277,8 @@
 
     <TextView
         android:id="@+id/hatch_two_tele"
-        android:layout_width="300dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/hatch_2"
         android:textAlignment="center"
@@ -293,8 +289,8 @@
 
     <TextView
         android:id="@+id/climbing"
-        android:layout_width="275dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/climb"
         android:textAlignment="center"
@@ -306,9 +302,9 @@
 
     <TextView
         android:id="@+id/feul_one_tele"
-        android:layout_width="274dp"
-        android:layout_height="31dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/fuel_1"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -318,33 +314,33 @@
 
     <TextView
         android:id="@+id/hatch_two_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_2_hatch_tele"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hatch_two_tele" />
 
     <TextView
         android:id="@+id/hatch_one_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_1_hatch_tele"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hatch_one_tele" />
 
     <TextView
         android:id="@+id/fuel_two_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_2_fuel_tele"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fuel_two_tele" />
@@ -356,7 +352,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/fuel_three_tele_entry"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -368,8 +364,8 @@
         android:layout_marginLeft="16dp"
         android:text="@string/team_climb_two"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/can_not_climb" />
 
     <Button
         android:id="@+id/climb_three_team"
@@ -379,7 +375,7 @@
         android:layout_marginRight="16dp"
         android:text="@string/team_climb_three"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/climb_two_team"
         app:layout_constraintEnd_toEndOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
