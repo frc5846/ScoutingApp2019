@@ -9,57 +9,77 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class Tele extends AppCompatActivity implements OnClickListener {
-    Button scale_tele_up;
-    Button scale_tele_down;
-    Button switch_tele_up;
-    Button switch_tele_down;
-    Button deliver_tele_up;
-    Button deliver_tele_down;
-    Button switch_opp_up;
-    Button switch_opp_down;
-    TextView scale_tele_entry;
-    TextView switch_tele_entry;
-    TextView deliver_tele_entry;
-    TextView switch_opp_entry;
-    public static int scale_tele=0;
-    public static int switch_tele=0;
-    public static int deliver_tele=0;
-    public static int switch_opp=0;
+    Button fuel_one_tele_up;
+    Button fuel_one_tele_down;
+    Button hatch_one_tele_up;
+    Button hatch_one_tele_down;
+    Button fuel_two_tele_up;
+    Button fuel_two_tele_down;
+    Button hatch_two_tele_up;
+    Button hatch_two_tele_down;
+    Button fuel_three_tele_up;
+    Button fuel_three_tele_down;
+    Button hatch_three_tele_up;
+    Button hatch_three_tele_down;
+    TextView fuel_one_tele_entry;
+    TextView hatch_one_tele_entry;
+    TextView fuel_two_tele_entry;
+    TextView hatch_two_tele_entry;
+    TextView fuel_three_tele_entry;
+    TextView hatch_three_tele_entry;
+    public static int fuel_one_tele=0;
+    public static int hatch_one_tele=0;
+    public static int fuel_two_tele=0;
+    public static int hatch_two_tele=0;
+    public static int fuel_three_tele=0;
+    public static int hatch_three_tele=0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tele);
-        scale_tele_up = findViewById(R.id.scale_tele_up);
-        scale_tele_down = findViewById(R.id.scale_tele_down);
-        switch_tele_up = findViewById(R.id.switch_tele_up);
-        switch_tele_down = findViewById(R.id.switch_tele_down);
-        deliver_tele_up = findViewById(R.id.deliver_tele_up);
-        deliver_tele_down = findViewById(R.id.deliver_tele_down);
-        switch_opp_up = findViewById(R.id.switch_opp_up);
-        switch_opp_down = findViewById(R.id.switch_opp_down);
-        scale_tele_entry = findViewById(R.id.scale_tele_entry);
-        switch_tele_entry = findViewById(R.id.switch_tele_entry);
-        deliver_tele_entry = findViewById(R.id.deliver_tele_entry);
-        switch_opp_entry = findViewById(R.id.switch_opp_entry);
+        fuel_one_tele_up = findViewById(R.id.fuel_one_tele_up);
+        fuel_one_tele_down = findViewById(R.id.fuel_one_tele_down);
+        hatch_one_tele_up = findViewById(R.id.hatch_one_tele_up);
+        hatch_one_tele_down = findViewById(R.id.hatch_one_tele_down);
+        fuel_two_tele_up = findViewById(R.id.fuel_two_tele_up);
+        fuel_two_tele_down = findViewById(R.id.fuel_two_tele_down);
+        hatch_two_tele_up = findViewById(R.id.hatch_two_tele_up);
+        hatch_two_tele_down = findViewById(R.id.hatch_two_tele_down);
+        fuel_three_tele_up = findViewById(R.id.fuel_three_tele_up);
+        fuel_three_tele_down = findViewById(R.id.fuel_three_tele_down);
+        hatch_three_tele_up = findViewById(R.id.hatch_three_tele_up);
+        hatch_three_tele_down = findViewById(R.id.hatch_three_tele_down);
+        fuel_one_tele_entry = findViewById(R.id.fuel_one_tele_entry);
+        hatch_one_tele_entry = findViewById(R.id.hatch_one_tele_entry);
+        fuel_two_tele_entry = findViewById(R.id.hatch_two_tele_entry);
+        hatch_two_tele_entry = findViewById(R.id.fuel_two_tele_entry);
+        fuel_three_tele_entry = findViewById(R.id.hatch_three_tele_entry);
+        hatch_three_tele_entry = findViewById(R.id.fuel_three_tele_entry);
 
-        scale_tele_up.setOnClickListener( this);
-        scale_tele_down.setOnClickListener(this);
-        switch_tele_up.setOnClickListener(this);
-        switch_tele_down.setOnClickListener(this);
-        deliver_tele_up.setOnClickListener(this);
-        deliver_tele_down.setOnClickListener(this);
-        switch_opp_up.setOnClickListener(this);
-        switch_opp_down.setOnClickListener(this);
-        scale_tele_entry.setText(String.valueOf(scale_tele));
-        switch_tele_entry.setText(String.valueOf(switch_tele));
-        deliver_tele_entry.setText(String.valueOf(deliver_tele));
-        switch_opp_entry.setText(String.valueOf(switch_opp));
+        fuel_one_tele_up.setOnClickListener(this);
+        fuel_one_tele_down.setOnClickListener(this);
+        hatch_one_tele_up.setOnClickListener(this);
+        hatch_one_tele_down.setOnClickListener(this);
+        fuel_two_tele_up.setOnClickListener(this);
+        fuel_two_tele_down.setOnClickListener(this);
+        hatch_two_tele_up.setOnClickListener(this);
+        hatch_two_tele_down.setOnClickListener(this);
+        fuel_three_tele_up.setOnClickListener(this);
+        fuel_three_tele_down.setOnClickListener(this);
+        hatch_three_tele_up.setOnClickListener(this);
+        hatch_three_tele_down.setOnClickListener(this);
+        fuel_one_tele_entry.setText(String.valueOf(fuel_one_tele));
+        hatch_one_tele_entry.setText(String.valueOf(hatch_one_tele));
+        fuel_two_tele_entry.setText(String.valueOf(fuel_two_tele));
+        hatch_two_tele_entry.setText(String.valueOf(hatch_two_tele));
+        fuel_three_tele_entry.setText(String.valueOf(fuel_three_tele));
+        hatch_three_tele_entry.setText(String.valueOf(hatch_three_tele));
     }
 
     public void Autonomous (View view) {
-        Intent Auto = new Intent(this, Autonomous.class);
+        Intent Auto = new Intent(this, Sandstorm.class);
         startActivity(Auto);
     }
 
@@ -70,47 +90,68 @@ public class Tele extends AppCompatActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if(v==scale_tele_up){
-            scale_tele++;
+        if(v==fuel_one_tele_up){
+            fuel_one_tele++;
         }
-        else if(v==scale_tele_down){
-            scale_tele--;
-            if (scale_tele<0){
-                scale_tele=0;
+        else if(v==fuel_one_tele_down){
+            fuel_one_tele--;
+            if (fuel_one_tele<0){
+                fuel_one_tele=0;
             }
         }
-        else if(v==switch_tele_up) {
-            switch_tele++;
+        else if(v==hatch_one_tele_up) {
+            hatch_one_tele++;
         }
-        else if(v==switch_tele_down){
-            switch_tele--;
-            if(switch_tele<0){
-                switch_tele=0;
+        else if(v==hatch_one_tele_down){
+            hatch_one_tele--;
+            if(hatch_one_tele<0){
+                hatch_one_tele=0;
             }
         }
-        else if(v==deliver_tele_up){
-            deliver_tele++;
+        else if(v==fuel_two_tele_up){
+            fuel_two_tele++;
         }
-        else if(v==deliver_tele_down){
-            deliver_tele--;
-            if(deliver_tele<0){
-                deliver_tele=0;
+        else if(v==fuel_two_tele_down){
+            fuel_two_tele--;
+            if(fuel_two_tele<0){
+                fuel_two_tele=0;
             }
         }
-        else if(v==switch_opp_up) {
-            switch_opp++;
+        else if(v==hatch_two_tele_up) {
+            hatch_two_tele++;
         }
-        else if(v==switch_opp_down){
-            switch_opp--;
-            if(switch_opp<0){
-                switch_opp=0;
+        else if(v==hatch_two_tele_down){
+            hatch_two_tele--;
+            if(hatch_two_tele<0){
+                hatch_two_tele=0;
+            }
+        }
+        else if(v==fuel_three_tele_up){
+            fuel_three_tele++;
+        }
+        else if(v==fuel_three_tele_down){
+            fuel_three_tele--;
+            if(fuel_three_tele<0){
+                fuel_three_tele=0;
+            }
+        }
+        else if(v==hatch_three_tele_up) {
+            hatch_three_tele++;
+        }
+        else if(v==hatch_three_tele_down){
+            hatch_three_tele--;
+            if(hatch_three_tele<0){
+                hatch_three_tele=0;
             }
         }
 
-        scale_tele_entry.setText(String.valueOf(scale_tele));
-        switch_tele_entry.setText(String.valueOf(switch_tele));
-        deliver_tele_entry.setText(String.valueOf(deliver_tele));
-        switch_opp_entry.setText(String.valueOf(switch_opp));
+        fuel_one_tele_entry.setText(String.valueOf(fuel_one_tele));
+        hatch_one_tele_entry.setText(String.valueOf(hatch_one_tele));
+        fuel_two_tele_entry.setText(String.valueOf(fuel_two_tele));
+        hatch_two_tele_entry.setText(String.valueOf(hatch_two_tele));
+        fuel_three_tele_entry.setText(String.valueOf(fuel_three_tele));
+        hatch_three_tele_entry.setText(String.valueOf(hatch_three_tele));
+
     }
 
 }
