@@ -26,13 +26,13 @@ public class Notes extends AppCompatActivity{
     }
 
 
-    public void Autonomous(View view) {
-        Intent Auto = new Intent(this, Sandstorm.class);
-        startActivity(Auto);
+    public void Sandstorm(View view) {
+        Intent Sand = new Intent(this, Sandstorm.class);                            //Switch to Sandstorm Activity on button press.
+        startActivity(Sand);
     }
 
     public void Teleop(View view) {
-        Intent tele = new Intent(this, Tele.class);
+        Intent tele = new Intent(this, Tele.class);                                //Switch to Tele-op Activity on button press.
         startActivity(tele);
     }
 

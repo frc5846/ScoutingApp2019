@@ -20,7 +20,7 @@
         android:id="@+id/auto_notes"
         android:layout_width="135dp"
         android:layout_height="46dp"
-        android:onClick="Autonomous"
+        android:onClick="Sandstorm"
         android:text="@string/Sandstorm"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tele_notes"
@@ -57,7 +57,8 @@
         android:inputType="textPersonName"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notes" />
+        app:layout_constraintTop_toBottomOf="@+id/notes"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/notes"
