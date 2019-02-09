@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guestaccount.scoutingapp2018.Notes">
+    tools:context="com.example.elija.scoutingapp2019.Notes">
 
     <Button
         android:id="@+id/tele_notes"
@@ -21,7 +21,7 @@
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Autonomous"
-        android:text="@string/auto"
+        android:text="@string/Sandstorm"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/tele_notes"
         app:layout_constraintLeft_toLeftOf="parent" />

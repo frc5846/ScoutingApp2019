@@ -36,7 +36,7 @@ public static int match_number;
     public void startMatch(View view) {
 
         //Do something in response to button
-           Intent Start = new Intent(this, Autonomous.class);
+           Intent Start = new Intent(this, Sandstorm.class);                    //open data recording section when button is pressed
         // intent.putExtra(EXTRA_MESSAGE, message);
            startActivity(Start);
         EditText team_number_entry = findViewById(R.id.team_number_entry);
@@ -45,26 +45,28 @@ public static int match_number;
         match_number = Integer.parseInt(match_number_entry.getText().toString());
 
         Intent variables = new Intent(MainActivity.this, Notes.class);
-        variables.putExtra("alliance", alliance);
+        variables.putExtra("alliance", alliance);                                      //Send variables to notes section for recording
         variables.putExtra("team_number", team_number);
         variables.putExtra("match_number", match_number);
         }
 
     @Override
     public void onClick(View v) {
-        if (v==red_alliance){
+        if (v==red_alliance){                                                //If red alliance button is pressed, change alliance variable to record that.
             alliance = true;
             blue_alliance.setSelected(false);
             red_alliance.setSelected(true);
         }
-        if(v==blue_alliance){
+        if(v==blue_alliance){                                               //The same as above, but with the blue alliance button
             alliance = false;
 
     //public void increaseScale (View view) {
         //  TextView Scale_Display = findViewById(R.id.Scale_display);
         //  int Scale = Integer.parseInt(Scale_Display.getText().toString());
         //  Scale_Display.setText(""+Scale++);
-}     blue_alliance.setSelected(true);
-        red_alliance.setSelected(false);
+            blue_alliance.setSelected(true);
+            red_alliance.setSelected(false);
+
         }
-        }
+    }
+}

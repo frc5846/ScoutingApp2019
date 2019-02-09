@@ -27,7 +27,7 @@ public class Notes extends AppCompatActivity{
 
 
     public void Autonomous(View view) {
-        Intent Auto = new Intent(this, Autonomous.class);
+        Intent Auto = new Intent(this, Sandstorm.class);
         startActivity(Auto);
     }
 

@@ -106,61 +106,61 @@ public class Tele extends AppCompatActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if(v==fuel_one_tele_up){
+        if(v==fuel_one_tele_up){                                                         //Increase value for fuel scored at level one during tele-op by one
             fuel_one_tele++;
         }
-        else if(v==fuel_one_tele_down){
+        else if(v==fuel_one_tele_down){                                                  //Decrease value for fuel scored at level one during tele-op by one
             fuel_one_tele--;
-            if (fuel_one_tele<0){
+            if (fuel_one_tele<0){                                                        //If value for fuel scored at level one during tele-op becomes negative, set to 0
                 fuel_one_tele=0;
             }
         }
-        else if(v==hatch_one_tele_up) {
+        else if(v==hatch_one_tele_up) {                                                  //Increase value for hatches scored at level one during tele-op by one
             hatch_one_tele++;
         }
-        else if(v==hatch_one_tele_down){
+        else if(v==hatch_one_tele_down){                                                 //Decrease value for hatches scored at level one during tele-op by one
             hatch_one_tele--;
-            if(hatch_one_tele<0){
+            if(hatch_one_tele<0){                                                        //If value for hatches scored at level one during tele-op becomes negative, set to 0
                 hatch_one_tele=0;
             }
         }
-        else if(v==fuel_two_tele_up){
+        else if(v==fuel_two_tele_up){                                                    //Increase value for fuel scored at level two during tele-op by one
             fuel_two_tele++;
         }
-        else if(v==fuel_two_tele_down){
+        else if(v==fuel_two_tele_down){                                                  //Decrease value for fuel scored at level one during tele-op by one
             fuel_two_tele--;
-            if(fuel_two_tele<0){
+            if(fuel_two_tele<0){                                                         //If value for fuel scored at level two during tele-op becomes negative, set to 0
                 fuel_two_tele=0;
             }
         }
-        else if(v==hatch_two_tele_up) {
+        else if(v==hatch_two_tele_up) {                                                  //Increase value for hatches scored at level two during tele-op by one
             hatch_two_tele++;
         }
-        else if(v==hatch_two_tele_down){
+        else if(v==hatch_two_tele_down){                                                 //Decrease value for hatches scored at level two during tele-op by one
             hatch_two_tele--;
-            if(hatch_two_tele<0){
+            if(hatch_two_tele<0){                                                        //If value for hatches scored at level two during tele-op becomes negative, set to 0
                 hatch_two_tele=0;
             }
         }
-        else if(v==fuel_three_tele_up){
+        else if(v==fuel_three_tele_up){                                                  //Increase value for fuel scored at level three during tele-op by one
             fuel_three_tele++;
         }
-        else if(v==fuel_three_tele_down){
+        else if(v==fuel_three_tele_down){                                                //Decrease value for fuel scored at level three during tele-op by one
             fuel_three_tele--;
-            if(fuel_three_tele<0){
+            if(fuel_three_tele<0){                                                       //If value for fuel scored at level three during tele-op becomes negative, set to 0
                 fuel_three_tele=0;
             }
         }
-        else if(v==hatch_three_tele_up) {
+        else if(v==hatch_three_tele_up) {                                                //Increase value for hatches scored at level three during tele-op by one
             hatch_three_tele++;
         }
-        else if(v==hatch_three_tele_down){
+        else if(v==hatch_three_tele_down){                                               //Decrease value for hatches scored at level three during tele-op by one
             hatch_three_tele--;
-            if(hatch_three_tele<0){
+            if(hatch_three_tele<0){                                                      //If value for hatches scored at level three during tele-op becomes negative, set to 0
                 hatch_three_tele=0;
             }
         }
-        else if (v==can_not_climb){
+        else if (v==can_not_climb){                                                      //Set value for if the robot climbed to 0, which means no
             climb=0;
             can_not_climb.setSelected(true);
             climb_two.setSelected(false);
@@ -168,7 +168,7 @@ public class Tele extends AppCompatActivity implements OnClickListener {
             climb_two_team.setSelected(false);
             climb_three_team.setSelected(false);
         }
-        else if (v==climb_two){
+        else if (v==climb_two){                                                         //Set value for if the robot climbed to 1, which means to level two
             climb=1;
             can_not_climb.setSelected(false);
             climb_two.setSelected(true);
@@ -176,7 +176,7 @@ public class Tele extends AppCompatActivity implements OnClickListener {
             climb_two_team.setSelected(false);
             climb_three_team.setSelected(false);
         }
-        else if (v==climb_three){
+        else if (v==climb_three){                                                       //Set value for if the robot climbed to 2, which means to level three
             climb=2;
             can_not_climb.setSelected(false);
             climb_two.setSelected(false);
@@ -184,7 +184,7 @@ public class Tele extends AppCompatActivity implements OnClickListener {
             climb_two_team.setSelected(false);
             climb_three_team.setSelected(false);
         }
-        else if (v==climb_two_team){
+        else if (v==climb_two_team){                                                   //Set value for if the robot climbed to 3, which means to level two with the ability to bring another robot
             climb=3;
             can_not_climb.setSelected(false);
             climb_two.setSelected(false);
@@ -192,7 +192,7 @@ public class Tele extends AppCompatActivity implements OnClickListener {
             climb_two_team.setSelected(true);
             climb_three_team.setSelected(false);
         }
-        else if (v==climb_three_team){
+        else if (v==climb_three_team){                                                //Set value for if the robot climbed to 1, which means to level three with the ability to bring another robot
             climb=4;
             can_not_climb.setSelected(false);
             climb_two.setSelected(false);
@@ -201,12 +201,12 @@ public class Tele extends AppCompatActivity implements OnClickListener {
             climb_three_team.setSelected(false);
         }
 
-        fuel_one_tele_entry.setText(String.valueOf(fuel_one_tele));
-        hatch_one_tele_entry.setText(String.valueOf(hatch_one_tele));
-        fuel_two_tele_entry.setText(String.valueOf(fuel_two_tele));
-        hatch_two_tele_entry.setText(String.valueOf(hatch_two_tele));
-        fuel_three_tele_entry.setText(String.valueOf(fuel_three_tele));
-        hatch_three_tele_entry.setText(String.valueOf(hatch_three_tele));
+        fuel_one_tele_entry.setText(String.valueOf(fuel_one_tele));                  //Displays value of fuel scored at level one in tele-op
+        hatch_one_tele_entry.setText(String.valueOf(hatch_one_tele));                //Displays value of hatches scored at level one in tele-op
+        fuel_two_tele_entry.setText(String.valueOf(fuel_two_tele));                  //Displays value of fuel scored at level two in tele-op
+        hatch_two_tele_entry.setText(String.valueOf(hatch_two_tele));                //Displays value of hatches scored at level two in tele-op
+        fuel_three_tele_entry.setText(String.valueOf(fuel_three_tele));              //Displays value of fuel scored at level three in tele-op
+        hatch_three_tele_entry.setText(String.valueOf(hatch_three_tele));            //Displays value of hatches scored at level three in tele-op
 
     }
 

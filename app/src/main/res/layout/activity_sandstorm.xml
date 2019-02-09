@@ -4,314 +4,314 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.guestaccount.scoutingapp2018.Autonomous">
+    tools:context="com.example.elija.scoutingapp2019.Sandstorm">
 
     <Button
-        android:id="@+id/deliver_auto_up3"
+        android:id="@+id/hatch_three_sand_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry3"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hatch_three_sand_entry"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/deliver_auto_down3"
+        android:id="@+id/fuel_three_sand_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry3"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_three_sand_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/deliver_auto_entry3"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/hatch_three_sand_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_3_hatch_auto"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deliver_auto3" />
+        app:layout_constraintTop_toBottomOf="@+id/hatch_three_sand" />
 
     <TextView
-        android:id="@+id/deliver_auto3"
-        android:layout_width="300dp"
-        android:layout_height="30dp"
+        android:id="@+id/hatch_three_sand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/hatch_3"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_tele_entry3" />
+        app:layout_constraintTop_toBottomOf="@+id/fuel_three_sand_entry" />
 
     <Button
-        android:id="@+id/switch_auto_down3"
+        android:id="@+id/hatch_three_sand_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry3"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hatch_three_sand_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/switch_tele_entry3"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/level_3_fuel_auto"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_auto3" />
-
-    <Button
-        android:id="@+id/switch_auto_up3"
+        android:id="@+id/fuel_three_sand_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="28dp"
+        android:text="@string/level_3_fuel_auto"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_three_sand" />
+
+    <Button
+        android:id="@+id/hatch_one_sand_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/increase_value"
         android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hatch_one_tele_entry"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/switch_auto3"
-        android:layout_width="275dp"
-        android:layout_height="30dp"
+        android:id="@+id/fuel_three_sand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/fuel_3"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/scale_auto_entry"
+        app:layout_constraintEnd_toEndOf="@+id/fuel_one_sand_entry"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/scale_auto_entry"
-        app:layout_constraintTop_toBottomOf="@+id/scale_auto_entry3" />
+        app:layout_constraintStart_toStartOf="@+id/fuel_one_sand_entry"
+        app:layout_constraintTop_toBottomOf="@+id/hatch_two_sand_entry" />
 
     <Button
-        android:id="@+id/scale_auto_down3"
+        android:id="@+id/hatch_two_sand_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry3"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hatch_two_sand_entry"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/scale_auto_entry3"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/level_2_hatch_auto"
-        android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fuel_1_sand3" />
-
-    <Button
-        android:id="@+id/scale_auto_up3"
+        android:id="@+id/hatch_two_sand_entry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:text="@string/level_2_hatch_auto"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hatch_two_sand" />
+
+    <Button
+        android:id="@+id/fuel_three_sand_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry3"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_three_sand_entry"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/fuel_1_sand3"
-        android:layout_width="275dp"
-        android:layout_height="26dp"
+        android:id="@+id/hatch_two_sand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/hatch_2"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deliver_auto_entry" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_two_sand_entry" />
 
     <Button
-        android:id="@+id/baseline_yes2"
+        android:id="@+id/baseline_yes_two"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
         android:text="@string/level_two"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/baseline_no"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/baseline_yes" />
 
     <Button
-        android:id="@+id/notes_auto"
+        android:id="@+id/notes_sand"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Notes"
         android:text="@string/notes"
         android:textSize="24sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/teleop_auto"
+        app:layout_constraintBaseline_toBaselineOf="@+id/teleop_sand"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/teleop_auto"
+        android:id="@+id/teleop_sand"
         android:layout_width="135dp"
         android:layout_height="46dp"
         android:onClick="Teleop"
         android:text="@string/tele_op"
         android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@id/Sandstorm"
-        app:layout_constraintEnd_toStartOf="@+id/notes_auto"
+        app:layout_constraintEnd_toStartOf="@+id/notes_sand"
         app:layout_constraintHorizontal_chainStyle="packed" />
 
     <TextView
-        android:id="@+id/scale_auto_entry"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/fuel_one_sand_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_1_fuel_auto"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fuel_1_sand" />
+        app:layout_constraintTop_toBottomOf="@+id/fuel_one_sand" />
 
     <TextView
-        android:id="@+id/fuel_1_sand"
-        android:layout_width="275dp"
-        android:layout_height="26dp"
+        android:id="@+id/fuel_one_sand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="@string/fuel_1"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/teleop_auto" />
+        app:layout_constraintTop_toBottomOf="@+id/teleop_sand" />
 
     <Button
-        android:id="@+id/scale_auto_down"
+        android:id="@+id/fuel_one_sand_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry"
-        app:layout_constraintEnd_toStartOf="@+id/scale_auto_entry"
-        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp"/>
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_one_sand_entry"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/scale_auto_up"
+        android:id="@+id/fuel_one_sand_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/scale_auto_entry" android:layout_marginEnd="16dp"/>
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_one_sand_entry"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
-        android:id="@+id/switch_auto_down"
+        android:id="@+id/hatch_one_sand_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/switch_tele_entry"
-        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp" />
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hatch_one_tele_entry"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/switch_auto_up"
+        android:id="@+id/hatch_two_sand_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:text="@string/increase_value"
         android:textAlignment="center"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/scale_auto_entry3"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/hatch_two_sand_entry"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/deliver_auto_down"
+        android:id="@+id/fuel_two_sand_down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
         android:text="@string/decrease_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry"
-        app:layout_constraintLeft_toLeftOf="parent" android:layout_marginStart="16dp" />
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_two_sand_entry"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/deliver_auto_up"
+        android:id="@+id/fuel_two_sand_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginRight="28dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="1dp"
         android:text="@string/increase_value"
-        android:textSize="30sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/deliver_auto_entry"
+        android:textSize="24sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_two_sand_entry"
         app:layout_constraintRight_toRightOf="parent" />
 
     <TextView
-        android:id="@+id/switch_auto"
+        android:id="@+id/hatch_one_tele"
         android:layout_width="275dp"
         android:layout_height="30dp"
+        android:layout_marginTop="16dp"
         android:text="@string/hatch_1"
         android:textAlignment="center"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/scale_auto_entry"
+        app:layout_constraintEnd_toEndOf="@+id/fuel_one_sand_entry"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/scale_auto_entry"
-        app:layout_constraintTop_toBottomOf="@+id/scale_auto_entry" />
+        app:layout_constraintStart_toStartOf="@+id/fuel_one_sand_entry"
+        app:layout_constraintTop_toBottomOf="@+id/fuel_one_sand_entry" />
 
     <TextView
-        android:id="@+id/switch_tele_entry"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/hatch_one_tele_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_1_hatch_auto"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_auto" />
+        app:layout_constraintTop_toBottomOf="@+id/hatch_one_tele" />
 
     <TextView
-        android:id="@+id/deliver_auto"
+        android:id="@+id/fuel_two_sand"
         android:layout_width="300dp"
         android:layout_height="30dp"
+        android:layout_marginTop="16dp"
         android:text="@string/fuel_2"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/switch_tele_entry" />
+        app:layout_constraintTop_toBottomOf="@+id/hatch_one_tele_entry" />
 
     <TextView
-        android:id="@+id/deliver_auto_entry"
-        android:layout_width="175dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/fuel_two_sand_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/level_2_fuel_auto"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deliver_auto" />
+        app:layout_constraintTop_toBottomOf="@+id/fuel_two_sand" />
 
     <Button
         android:id="@+id/baseline_no"
@@ -319,7 +319,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/stayed_still"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/baseline_yes"
         app:layout_constraintTop_toBottomOf="@+id/Habitat" />
 
@@ -328,20 +328,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/level_one"
-        android:textSize="30sp"
+        android:textSize="24sp"
         app:layout_constraintBaseline_toBaselineOf="@+id/baseline_no"
-        app:layout_constraintEnd_toStartOf="@+id/baseline_yes2" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Habitat"
-        android:layout_width="275dp"
-        android:layout_height="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="@string/habitat"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/deliver_auto_entry3" />
+        app:layout_constraintTop_toBottomOf="@+id/hatch_three_sand_entry" />
 
     <TextView
         android:id="@+id/Sandstorm"
@@ -351,7 +353,7 @@
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/teleop_auto"
+        app:layout_constraintEnd_toStartOf="@+id/teleop_sand"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
